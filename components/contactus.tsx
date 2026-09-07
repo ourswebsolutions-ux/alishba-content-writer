@@ -2,14 +2,19 @@
 "use client";
 
 import Link from "next/link";
-import { Phone, Mail, Linkedin, ArrowUpRight } from "lucide-react";
+
+import {
+  Phone,
+  Mail,
+  ArrowUpRight,
+} from "lucide-react";
 
 interface ContactMethod {
   id: number;
   title: string;
   value: string;
   href: string;
-  type: "phone" | "email" | "linkedin";
+  type: "phone" | "email" | "facebook";
   cta: string;
 }
 
@@ -17,25 +22,27 @@ const contactMethods: ContactMethod[] = [
   {
     id: 1,
     title: "Phone",
-    value: "+92 327 5561880 ",
-    href: "tel:+92 327 5561880",
+    value: "+92 302 9561459",
+    href: "tel:+923029561459",
     type: "phone",
     cta: "Call Me",
   },
+
   {
     id: 2,
     title: "Email",
-    value: "alishbasiddiq61@gmail.com",
-    href: "mailto:alishbasiddiq61@gmail.com",
+    value: "javeriaahmed734@gmail.com",
+    href: "mailto:javeriaahmed734@gmail.com",
     type: "email",
     cta: "Send Email",
   },
+
   {
     id: 3,
-    title: "LinkedIn",
+    title: "Facebook",
     value: "Connect with me",
-    href: "https://www.linkedin.com/in/your-profile/",
-    type: "linkedin",
+    href: "https://www.facebook.com/share/18rMjC62tH/",
+    type: "facebook",
     cta: "View Profile",
   },
 ];
@@ -43,8 +50,21 @@ const contactMethods: ContactMethod[] = [
 const iconMap = {
   phone: Phone,
   email: Mail,
-  linkedin: Linkedin,
+  facebook: FacebookIcon,
 };
+
+function FacebookIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className={className}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073c0 6.019 4.388 11.003 10.125 11.927v-8.437H7.078v-3.49h3.047V9.412c0-3.018 1.792-4.686 4.533-4.686 1.312 0 2.686.236 2.686.236v2.976h-1.514c-1.491 0-1.955.93-1.955 1.885v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.076 24 18.092 24 12.073Z" />
+    </svg>
+  );
+}
 
 export default function ContactSection() {
   return (
@@ -64,12 +84,14 @@ export default function ContactSection() {
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-yellow-400">
             Get In Touch
           </p>
+
           <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-5xl">
             Contact Me
           </h2>
+
           <p className="mx-auto mt-4 max-w-xl text-base text-gray-400 md:text-lg">
-            Have a project in mind or want to discuss an opportunity? Feel free
-            to reach out.
+            Have a research opportunity, academic project, or chemistry-related
+            inquiry? Feel free to reach out.
           </p>
         </div>
 
@@ -77,7 +99,7 @@ export default function ContactSection() {
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {contactMethods.map((method) => {
             const Icon = iconMap[method.type];
-            const isExternal = method.type === "linkedin";
+            const isExternal = method.type === "facebook";
 
             return (
               <Link
@@ -98,7 +120,10 @@ export default function ContactSection() {
 
                 {/* Icon */}
                 <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl border border-yellow-400/20 bg-yellow-400/10 transition-all duration-300 group-hover:scale-110 group-hover:border-yellow-400/40 group-hover:bg-yellow-400/20">
-                  <Icon className="h-5 w-5 text-yellow-400" strokeWidth={2} />
+                  <Icon
+                    className="h-5 w-5 text-yellow-400"
+                    strokeWidth={2}
+                  />
                 </div>
 
                 {/* Title */}
@@ -107,11 +132,14 @@ export default function ContactSection() {
                 </h3>
 
                 {/* Value */}
-                <p className="mb-5 text-sm text-gray-400">{method.value}</p>
+                <p className="mb-5 text-sm text-gray-400">
+                  {method.value}
+                </p>
 
                 {/* CTA */}
                 <div className="inline-flex items-center gap-1.5 text-sm font-semibold text-yellow-400 transition-all duration-300 group-hover:gap-2.5">
                   {method.cta}
+
                   <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </div>
               </Link>
@@ -122,10 +150,11 @@ export default function ContactSection() {
         {/* Bottom message + CTA */}
         <div className="mt-16 text-center">
           <p className="mb-6 text-base text-gray-400">
-            Let&apos;s build something great together.
+            Let&apos;s connect and explore research opportunities together.
           </p>
+
           <Link
-            href="mailto:alishbasiddiq61@gmail.com"
+            href="mailto:javeriaahmed734@gmail.com"
             className="inline-flex items-center gap-2 rounded-lg bg-yellow-400 px-6 py-3 text-sm font-semibold text-black transition-all duration-300 hover:bg-yellow-300 hover:shadow-lg hover:shadow-yellow-500/20"
           >
             Start a Conversation

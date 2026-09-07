@@ -50,7 +50,7 @@ export default function AboutMeSection() {
 
           {/* Contact button */}
           <Link
-            href="/contact"
+            href="/#contact"
             className="mt-5 flex w-full max-w-[320px] items-center justify-center border border-yellow-500/60 bg-black py-2.5 text-sm font-medium text-yellow-400 transition-all duration-200 hover:border-yellow-400 hover:bg-yellow-500/10 hover:text-yellow-300"
           >
             Contact here
@@ -96,15 +96,23 @@ export default function AboutMeSection() {
           {/* Social Icons */}
           <div className="mt-8 flex items-center gap-4">
             {/* LinkedIn */}
-            <a
-              href="https://linkedin.com/in/nehalanees"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-              className="flex h-9 w-9 items-center justify-center rounded-md bg-[#0A66C2] text-white transition-transform hover:scale-110"
-            >
-              <Linkedin className="h-5 w-5" strokeWidth={2.2} />
-            </a>
+           {/* Facebook */}
+<a
+  href="https://www.facebook.com/share/18rMjC62tH/"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Facebook"
+  className="flex h-9 w-9 items-center justify-center rounded-md bg-[#1877F2] text-white transition-transform hover:scale-110"
+>
+  <svg
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className="h-5 w-5"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073c0 6.019 4.388 11.003 10.125 11.927v-8.437H7.078v-3.49h3.047V9.412c0-3.018 1.792-4.686 4.533-4.686 1.312 0 2.686.236 2.686.236v2.976h-1.514c-1.491 0-1.955.93-1.955 1.885v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.076 24 18.092 24 12.073Z" />
+  </svg>
+</a>
 
             {/* WhatsApp */}
             <a
