@@ -39,14 +39,15 @@ export default function HomePage() {
         <div className="relative mx-auto flex min-h-[calc(100vh-66px)] max-w-[1440px] flex-col items-center px-6 pt-8 md:flex-row md:items-center md:px-10 lg:px-16">
           {/* LEFT – Headline + Button */}
           <div className="z-10 w-full md:w-[52%] lg:w-[50%] md:pr-8">
-            <h1 className="text-[32px] font-extrabold leading-[1.15] tracking-tight text-white sm:text-[40px] md:text-[48px] lg:text-[52px]">
-              Hi, I&apos;m{" "}
-              <span className="text-[#F5C518]">Alishba Siddiq</span> Your
-              <br />
-              Trusted SEO Expert &amp; Mentor
-              <br />
-              of Successful Students
-            </h1>
+            ```tsx
+<h1 className="text-[32px] font-extrabold leading-[1.15] tracking-tight text-white sm:text-[40px] md:text-[48px] lg:text-[52px]">
+  Hi, I&apos;m{" "}
+  <span className="text-[#F5C518]">Alishba Siddiq</span>{" "}
+  <br />
+  SEO Content Writer Helping Brands Rank &amp; Grow
+</h1>
+```
+
 
             {/* Download Resume Button */}
             <button
