@@ -34,7 +34,7 @@ export default function HomePage() {
         </section>
 
         {/* Client Testimonials */}
-        <TestimonialSlider />
+        {/* <TestimonialSlider /> */}
 
         {/* On-Page SEO Projects */}
         <OnPageSEOProjectsSlider />
