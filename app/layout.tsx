@@ -11,10 +11,10 @@ import FloatingWhatsApp from "@/components/floating-whatsapp"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Rabia Kalar - Creative Graphic Designer",
+  title: "Alishba SADDIQ - Creative Graphic Designer",
 
   description:
-    "Explore Rabia Kalar's graphic design portfolio. Expert in brand identity, logo design, social media graphics, and visual communication that makes brands stand out.",
+    "Explore Alishba SADDIQ's graphic design portfolio. Expert in brand identity, logo design, social media graphics, and visual communication that makes brands stand out.",
 
   keywords: [
     "graphic designer",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "brand identity",
     "visual design",
     "social media design",
-    "Rabia Kalar portfolio",
+    "Alishba SADDIQ portfolio",
     "freelance graphic designer",
     "creative designer Pakistan",
   ],
@@ -33,12 +33,12 @@ export const metadata: Metadata = {
     apple: "/logo.png",
   },
 
-  authors: [{ name: "Rabia Kalar" }],
+  authors: [{ name: "Alishba SADDIQ" }],
 
   openGraph: {
-    title: "Rabia Kalar - Creative Graphic Designer",
+    title: "Alishba SADDIQ - Creative Graphic Designer",
     description:
-      "Explore Rabia Kalar's portfolio of brand identities, logo designs, social media graphics, and visual storytelling for businesses and brands.",
+      "Explore Alishba SADDIQ's portfolio of brand identities, logo designs, social media graphics, and visual storytelling for businesses and brands.",
     type: "website",
     url: "https://storycup.vercel.app/",
     images: [
@@ -46,17 +46,17 @@ export const metadata: Metadata = {
         url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "Rabia Kalar Graphic Design Portfolio",
+        alt: "Alishba SADDIQ Graphic Design Portfolio",
       },
     ],
-    siteName: "Rabia Kalar Portfolio",
+    siteName: "Alishba SADDIQ Portfolio",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Rabia Kalar - Creative Graphic Designer",
+    title: "Alishba SADDIQ - Creative Graphic Designer",
     description:
-      "Explore Rabia Kalar's portfolio of brand identities, logo designs, and visual communication.",
+      "Explore Alishba SADDIQ's portfolio of brand identities, logo designs, and visual communication.",
     images: ["/logo.png"],
   },
 
