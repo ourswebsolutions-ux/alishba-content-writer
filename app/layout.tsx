@@ -10,21 +10,31 @@ import FloatingWhatsApp from "@/components/floating-whatsapp"
 
 const inter = Inter({ subsets: ["latin"] })
 
+// import type { Metadata } from "next";
+
 export const metadata: Metadata = {
-  title: "Alishba SADDIQ - Creative Graphic Designer",
+  title: "Alishba Siddiq - Content Writer & SEO Content Writer",
 
   description:
-    "Explore Alishba SADDIQ's graphic design portfolio. Expert in brand identity, logo design, social media graphics, and visual communication that makes brands stand out.",
+    "Explore Alishba Siddiq's portfolio as a professional Content Writer and SEO Content Writer with 3 years of experience in SEO content writing, article writing, blog writing, website content, content optimization, and web design.",
 
   keywords: [
-    "graphic designer",
-    "logo design",
-    "brand identity",
-    "visual design",
-    "social media design",
-    "Alishba SADDIQ portfolio",
-    "freelance graphic designer",
-    "creative designer Pakistan",
+    "Alishba Siddiq",
+    "content writer",
+    "SEO content writer",
+    "SEO writer",
+    "article writer",
+    "blog writer",
+    "website content writer",
+    "SEO content writing",
+    "content optimization",
+    "on-page SEO",
+    "SEO expert",
+    "web content writer",
+    "freelance content writer",
+    "content writer Pakistan",
+    "SEO content writer Pakistan",
+    "Alishba Siddiq portfolio",
   ],
 
   icons: {
@@ -33,30 +43,38 @@ export const metadata: Metadata = {
     apple: "/logo.png",
   },
 
-  authors: [{ name: "Alishba SADDIQ" }],
+  authors: [{ name: "Alishba Siddiq" }],
 
   openGraph: {
-    title: "Alishba SADDIQ - Creative Graphic Designer",
+    title: "Alishba Siddiq - Content Writer & SEO Content Writer",
+
     description:
-      "Explore Alishba SADDIQ's portfolio of brand identities, logo designs, social media graphics, and visual storytelling for businesses and brands.",
+      "Explore Alishba Siddiq's portfolio featuring SEO content writing, articles, blogs, website content, content optimization, and on-page SEO.",
+
     type: "website",
+
     url: "https://storycup.vercel.app/",
+
     images: [
       {
         url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "Alishba SADDIQ Graphic Design Portfolio",
+        alt: "Alishba Siddiq - Content Writer & SEO Content Writer",
       },
     ],
-    siteName: "Alishba SADDIQ Portfolio",
+
+    siteName: "Alishba Siddiq Portfolio",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Alishba SADDIQ - Creative Graphic Designer",
+
+    title: "Alishba Siddiq - Content Writer & SEO Content Writer",
+
     description:
-      "Explore Alishba SADDIQ's portfolio of brand identities, logo designs, and visual communication.",
+      "Professional Content Writer and SEO Content Writer specializing in SEO content, articles, blogs, website content, and content optimization.",
+
     images: ["/logo.png"],
   },
 
@@ -67,6 +85,7 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+
     googleBot: {
       index: true,
       follow: true,
@@ -75,7 +94,7 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-}
+};
 
 export default function RootLayout({
   children,
