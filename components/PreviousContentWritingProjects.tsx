@@ -1,10 +1,14 @@
+
 "use client";
 
 const projects = [
-  "Fashion niche article",
-  "Tech Article",
-  "Recipe article",
-  "crypto blockchaining Article",
+  "Sourpuss Clothing — Fashion & Gothic Lifestyle",
+  "Awwwards — Web Design & Technology",
+  "BuiltWith — Technology & Web Intelligence",
+  "Uptodown — Apps & Mobile Games",
+  "Mob.org — Android Games & Apps",
+  "APKMirror — Android Apps & Software",
+  "MDPI — Healthcare & Scientific Publishing",
 ];
 
 export default function PreviousContentWritingProjects() {
@@ -25,13 +29,13 @@ export default function PreviousContentWritingProjects() {
           Previous Content Writing Projects
         </h2>
 
-        {/* 2×2 Button Grid */}
-        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-4 sm:grid-cols-2">
+        {/* Project Grid */}
+        <div className="mx-auto grid max-w-3xl grid-cols-1 gap-4 sm:grid-cols-2">
           {projects.map((label) => (
             <button
               key={label}
               type="button"
-              className="rounded-md bg-yellow-400 px-6 py-2.5 text-center text-sm font-medium text-black transition-colors hover:bg-yellow-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 focus:ring-offset-black"
+              className="rounded-md bg-yellow-400 px-6 py-3 text-center text-sm font-medium text-black transition-colors hover:bg-yellow-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 focus:ring-offset-black"
             >
               {label}
             </button>

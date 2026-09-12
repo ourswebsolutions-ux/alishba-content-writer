@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from "next/link";
@@ -10,62 +11,63 @@ interface Project {
   url: string;
 }
 
+
 const projects: Project[] = [
   {
     id: 1,
-    title: "Nexuslinkagency.com",
+    title: "Sourpussclothing.com",
     description:
-      "A professional agency website designed with a modern business-focused layout and conversion-oriented presentation.",
-    url: "https://nexuslinkagency.com",
+      "A bold fashion e-commerce website focused on modern gothic clothing, strong visual presentation, and an engaging shopping experience.",
+    url: "https://www.sourpussclothing.com",
   },
   {
     id: 2,
-    title: "Glowbyfatima.com",
+    title: "Awwwards",
     description:
-      "A modern e-commerce website focused on product presentation, user experience, and online shopping.",
-    url: "https://glowbyfatima.com",
+      "A leading web design inspiration platform showcasing creative, innovative, and award-winning digital experiences from around the world.",
+    url: "https://www.awwwards.com",
   },
   {
     id: 3,
-    title: "Marketingtrendspro.com",
+    title: "BuiltWith",
     description:
-      "A digital marketing niche website created for marketing insights, services, and informative content.",
-    url: "https://marketingtrendspro.com",
+      "A technology intelligence platform that helps users discover the technologies, tools, and frameworks powering websites across the internet.",
+    url: "https://builtwith.com",
   },
   {
     id: 4,
-    title: "Siamesemania.com",
+    title: "Uptodown",
     description:
-      "A pets niche website focused on Siamese cats, useful information, and an engaging reader-friendly experience.",
-    url: "https://siamesemania.com",
+      "A global software and mobile application platform providing users with access to Android apps, games, and digital software.",
+    url: "https://en.uptodown.com",
   },
   {
     id: 5,
-    title: "Gardenchains.com",
+    title: "Mob.org",
     description:
-      "A gardening niche website designed around useful gardening content, clean navigation, and readable presentation.",
-    url: "https://gardenchains.com",
+      "A mobile gaming platform offering Android games, apps, and downloadable content with a user-friendly browsing experience.",
+    url: "https://mob.org",
   },
   {
     id: 6,
-    title: "Homestylespots.com",
+    title: "APKMirror",
     description:
-      "An interior designing website featuring home styling ideas, interior inspiration, and visually organized content.",
-    url: "https://homestylespots.com",
+      "A trusted Android application platform providing access to APK downloads with a clean interface and organized application library.",
+    url: "https://www.apkmirror.com",
   },
   {
     id: 7,
-    title: "Skinglowbucket.com",
+    title: "MDPI",
     description:
-      "A skin care and beauty niche website focused on skincare information, beauty content, and a clean modern interface.",
-    url: "https://skinglowbucket.com",
+      "An international open-access publishing platform featuring scientific research and academic journals across healthcare, technology, and other disciplines.",
+    url: "https://www.mdpi.com",
   },
   {
     id: 8,
-    title: "Healthnutriblog.com",
+    title: "BerneDirect.com",
     description:
-      "A health and nutrition website designed to provide informative content through a clean and easy-to-read layout.",
-    url: "https://healthnutriblog.com",
+      "A pet-focused e-commerce website offering dog products and services with a customer-friendly shopping experience.",
+    url: "https://bernedirect.com",
   },
 ];
 
@@ -88,9 +90,11 @@ export default function PreviousWebDesigningProjects() {
             Previous Web{" "}
             <span className="text-yellow-400">Designing Projects</span>
           </h2>
+
           <p className="mx-auto mt-4 max-w-2xl text-base text-gray-400 md:text-lg">
-            A selection of websites I&apos;ve designed and developed for
-            different businesses and industries.
+            A selection of websites and digital platforms I&apos;ve worked on
+            across fashion, technology, mobile applications, gaming, and
+            publishing industries.
           </p>
         </div>
 

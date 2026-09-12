@@ -10,9 +10,9 @@ interface Service {
 const services: Service[] = [
   {
     id: 1,
-    title: "SEO",
+    title: "Article Writer",
     description:
-      "SEO, or Search Engine Optimization, is the process of optimizing websites to rank higher in search results.",
+      "I write well-researched, engaging, and SEO-friendly articles that provide value to readers and help websites build authority.",
     icon: (
       <svg
         viewBox="0 0 200 200"
@@ -20,52 +20,39 @@ const services: Service[] = [
         xmlns="http://www.w3.org/2000/svg"
         className="h-40 w-40"
       >
-        {/* Monitor base */}
-        <rect x="45" y="40" width="110" height="80" rx="8" fill="#60A5FA" />
-        <rect x="52" y="48" width="96" height="58" rx="4" fill="#1E3A5F" />
-        {/* Stand */}
-        <rect x="85" y="120" width="30" height="12" rx="2" fill="#93C5FD" />
-        <rect x="70" y="132" width="60" height="8" rx="3" fill="#93C5FD" />
-        {/* Chart bars */}
-        <rect x="65" y="85" width="10" height="15" rx="2" fill="#FBBF24" />
-        <rect x="80" y="75" width="10" height="25" rx="2" fill="#34D399" />
-        <rect x="95" y="68" width="10" height="32" rx="2" fill="#F472B6" />
-        <rect x="110" y="78" width="10" height="22" rx="2" fill="#A78BFA" />
-        {/* Upward arrow */}
-        <path
-          d="M60 95 L95 55 L130 80"
-          stroke="#F87171"
-          strokeWidth="6"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          fill="none"
-        />
-        <path
-          d="M118 55 L130 55 L130 70"
-          stroke="#F87171"
-          strokeWidth="6"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          fill="none"
-        />
-        {/* Magnifying glass */}
-        <circle cx="145" cy="105" r="14" stroke="#38BDF8" strokeWidth="5" fill="none" />
-        <line x1="155" y1="115" x2="168" y2="128" stroke="#38BDF8" strokeWidth="5" strokeLinecap="round" />
-        {/* Floating rings */}
-        <circle cx="40" cy="55" r="10" stroke="#FBBF24" strokeWidth="3" fill="none" />
-        <circle cx="160" cy="45" r="8" stroke="#60A5FA" strokeWidth="3" fill="none" />
-        <circle cx="35" cy="110" r="7" stroke="#F472B6" strokeWidth="3" fill="none" />
-        {/* Cloud */}
-        <ellipse cx="55" cy="30" rx="16" ry="10" fill="#E0F2FE" />
-        <ellipse cx="68" cy="28" rx="12" ry="8" fill="#E0F2FE" />
+        {/* Document */}
+        <rect x="45" y="35" width="100" height="125" rx="10" fill="#BFDBFE" />
+        <rect x="55" y="45" width="80" height="105" rx="6" fill="#EFF6FF" />
+
+        {/* Article heading */}
+        <rect x="68" y="60" width="50" height="8" rx="3" fill="#60A5FA" />
+
+        {/* Article lines */}
+        <rect x="68" y="80" width="55" height="6" rx="3" fill="#93C5FD" />
+        <rect x="68" y="93" width="45" height="6" rx="3" fill="#93C5FD" />
+        <rect x="68" y="106" width="52" height="6" rx="3" fill="#93C5FD" />
+        <rect x="68" y="119" width="38" height="6" rx="3" fill="#93C5FD" />
+
+        {/* Pencil */}
+        <g transform="rotate(-40 145 65)">
+          <rect x="138" y="35" width="14" height="60" rx="3" fill="#FBBF24" />
+          <rect x="138" y="35" width="14" height="12" rx="3" fill="#F59E0B" />
+          <path d="M138 95 L145 108 L152 95 Z" fill="#FDE68A" />
+          <path d="M142 108 L145 114 L148 108 Z" fill="#1F2937" />
+        </g>
+
+        {/* Floating elements */}
+        <circle cx="38" cy="55" r="10" stroke="#FBBF24" strokeWidth="3" />
+        <circle cx="160" cy="125" r="9" stroke="#60A5FA" strokeWidth="3" />
       </svg>
     ),
   },
+
   {
     id: 2,
-    title: "Content writing",
+    title: "Content Writer",
     description:
-      "Content writing is the art of creating written material for websites, blogs, or other platforms.",
+      "I create clear, engaging, and SEO-focused content for blogs, businesses, brands, and digital platforms that connects with the target audience.",
     icon: (
       <svg
         viewBox="0 0 200 200"
@@ -73,35 +60,42 @@ const services: Service[] = [
         xmlns="http://www.w3.org/2000/svg"
         className="h-40 w-40"
       >
-        {/* Document back */}
-        <rect x="40" y="35" width="90" height="110" rx="10" fill="#93C5FD" />
-        {/* Document front */}
-        <rect x="50" y="45" width="90" height="110" rx="10" fill="#BFDBFE" />
-        {/* Lines on doc */}
-        <rect x="65" y="70" width="55" height="8" rx="3" fill="#60A5FA" />
-        <rect x="65" y="88" width="45" height="8" rx="3" fill="#60A5FA" />
-        <rect x="65" y="106" width="50" height="8" rx="3" fill="#60A5FA" />
-        {/* Red notepad / sticky */}
-        <rect x="105" y="55" width="55" height="70" rx="8" fill="#F87171" />
-        {/* Lines on red */}
-        <rect x="115" y="72" width="35" height="5" rx="2" fill="#FEE2E2" />
-        <rect x="115" y="85" width="28" height="5" rx="2" fill="#FEE2E2" />
-        <rect x="115" y="98" width="32" height="5" rx="2" fill="#FEE2E2" />
-        {/* Pencil */}
-        <g transform="rotate(-25 145 40)">
-          <rect x="138" y="20" width="14" height="55" rx="3" fill="#FBBF24" />
-          <rect x="138" y="20" width="14" height="12" rx="3" fill="#60A5FA" />
-          <path d="M138 75 L145 88 L152 75 Z" fill="#F59E0B" />
-          <path d="M142 88 L145 95 L148 88 Z" fill="#1F2937" />
+        {/* Main document */}
+        <rect x="40" y="35" width="105" height="125" rx="10" fill="#93C5FD" />
+        <rect x="50" y="45" width="85" height="105" rx="7" fill="#EFF6FF" />
+
+        {/* Content lines */}
+        <rect x="65" y="65" width="55" height="8" rx="3" fill="#60A5FA" />
+        <rect x="65" y="84" width="45" height="6" rx="3" fill="#93C5FD" />
+        <rect x="65" y="98" width="52" height="6" rx="3" fill="#93C5FD" />
+        <rect x="65" y="112" width="42" height="6" rx="3" fill="#93C5FD" />
+        <rect x="65" y="126" width="50" height="6" rx="3" fill="#93C5FD" />
+
+        {/* Chat/content bubble */}
+        <path
+          d="M120 55 Q120 45 130 45 H158 Q168 45 168 55 V82 Q168 92 158 92 H142 L132 102 V92 H130 Q120 92 120 82 Z"
+          fill="#FBBF24"
+        />
+
+        <rect x="132" y="59" width="24" height="5" rx="2" fill="#78350F" />
+        <rect x="132" y="70" width="20" height="5" rx="2" fill="#78350F" />
+
+        {/* Floating pencil */}
+        <g transform="rotate(-35 35 130)">
+          <rect x="28" y="105" width="12" height="45" rx="3" fill="#F472B6" />
+          <path d="M28 150 L34 162 L40 150 Z" fill="#EC4899" />
         </g>
+
+        <circle cx="35" cy="45" r="8" stroke="#FBBF24" strokeWidth="3" />
       </svg>
     ),
   },
+
   {
     id: 3,
-    title: "web designing",
+    title: "Website Content Writer",
     description:
-      "We provide professional web designing services to create visually appealing and user-friendly websites.",
+      "I write professional website content including home pages, service pages, about pages, landing pages, and other content designed to engage visitors and drive conversions.",
     icon: (
       <svg
         viewBox="0 0 200 200"
@@ -109,65 +103,110 @@ const services: Service[] = [
         xmlns="http://www.w3.org/2000/svg"
         className="h-40 w-40"
       >
-        {/* Browser window */}
-        <rect x="45" y="35" width="110" height="90" rx="12" fill="#1E3A8A" />
-        {/* Top bar */}
-        <rect x="45" y="35" width="110" height="22" rx="12" fill="#312E81" />
-        <rect x="45" y="47" width="110" height="10" fill="#312E81" />
+        {/* Browser */}
+        <rect x="35" y="40" width="130" height="105" rx="12" fill="#1E3A8A" />
+
+        {/* Browser top */}
+        <rect x="35" y="40" width="130" height="25" rx="12" fill="#312E81" />
+        <rect x="35" y="53" width="130" height="12" fill="#312E81" />
+
         {/* Traffic lights */}
-        <circle cx="60" cy="46" r="5" fill="#22C55E" />
-        <circle cx="76" cy="46" r="5" fill="#EAB308" />
-        <circle cx="92" cy="46" r="5" fill="#EF4444" />
-        {/* WEB label */}
-        <rect x="115" y="40" width="30" height="12" rx="3" fill="#4ADE80" />
+        <circle cx="51" cy="52" r="5" fill="#22C55E" />
+        <circle cx="67" cy="52" r="5" fill="#EAB308" />
+        <circle cx="83" cy="52" r="5" fill="#EF4444" />
+
+        {/* Website content */}
+        <rect x="50" y="78" width="45" height="8" rx="3" fill="#60A5FA" />
+        <rect x="50" y="94" width="75" height="6" rx="3" fill="#93C5FD" />
+        <rect x="50" y="107" width="65" height="6" rx="3" fill="#93C5FD" />
+
+        {/* CTA button */}
+        <rect x="50" y="121" width="35" height="12" rx="4" fill="#FBBF24" />
+
+        {/* Content card */}
+        <rect x="120" y="80" width="30" height="45" rx="5" fill="#4ADE80" />
+
+        {/* Pencil */}
+        <g transform="rotate(-35 145 145)">
+          <rect x="139" y="120" width="11" height="42" rx="3" fill="#F472B6" />
+          <path d="M139 162 L144.5 172 L150 162 Z" fill="#EC4899" />
+        </g>
+
+        {/* Code brackets */}
         <text
-          x="130"
-          y="49"
+          x="135"
+          y="110"
           textAnchor="middle"
           fill="#14532D"
-          fontSize="8"
-          fontWeight="bold"
-          fontFamily="sans-serif"
-        >
-          WEB
-        </text>
-        {/* Code brackets circle */}
-        <circle cx="100" cy="95" r="28" fill="#FBBF24" />
-        <text
-          x="100"
-          y="102"
-          textAnchor="middle"
-          fill="#1E3A8A"
-          fontSize="22"
+          fontSize="13"
           fontWeight="bold"
           fontFamily="monospace"
         >
           {"</>"}
         </text>
-        {/* Gear bottom left */}
-        <circle cx="55" cy="145" r="18" fill="#A78BFA" />
-        <circle cx="55" cy="145" r="8" fill="#1E1B4B" />
-        {/* Pencil left */}
-        <g transform="rotate(-40 40 120)">
-          <rect x="30" y="100" width="10" height="40" rx="2" fill="#F472B6" />
-          <path d="M30 140 L35 150 L40 140 Z" fill="#EC4899" />
-        </g>
-        {/* Connecting lines */}
+
+        <circle cx="30" cy="100" r="8" stroke="#FBBF24" strokeWidth="3" />
+      </svg>
+    ),
+  },
+
+  {
+    id: 4,
+    title: "Copywriter",
+    description:
+      "I craft persuasive and conversion-focused copy for websites, landing pages, advertisements, product pages, and marketing campaigns.",
+    icon: (
+      <svg
+        viewBox="0 0 200 200"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-40 w-40"
+      >
+        {/* Megaphone */}
         <path
-          d="M55 127 Q 40 110 50 90"
-          stroke="#F472B6"
-          strokeWidth="3"
-          fill="none"
+          d="M55 82 L120 58 V118 L55 96 Z"
+          fill="#60A5FA"
         />
+
         <path
-          d="M145 127 Q 160 110 150 90"
+          d="M120 58 L150 48 V128 L120 118 Z"
+          fill="#93C5FD"
+        />
+
+        {/* Megaphone handle */}
+        <path
+          d="M78 98 L78 135 Q78 142 85 142 H98 Q105 142 105 135 V108"
+          fill="#FBBF24"
+        />
+
+        {/* Sound waves */}
+        <path
+          d="M145 65 Q165 75 145 85"
           stroke="#FBBF24"
-          strokeWidth="3"
-          fill="none"
+          strokeWidth="5"
+          strokeLinecap="round"
         />
-        {/* Small gear right */}
-        <circle cx="145" cy="145" r="12" fill="#FBBF24" />
-        <circle cx="145" cy="145" r="5" fill="#1E3A8A" />
+
+        <path
+          d="M150 48 Q185 65 150 102"
+          stroke="#F472B6"
+          strokeWidth="5"
+          strokeLinecap="round"
+        />
+
+        {/* Copy document */}
+        <rect x="38" y="45" width="48" height="35" rx="6" fill="#EFF6FF" />
+        <rect x="48" y="56" width="25" height="5" rx="2" fill="#60A5FA" />
+        <rect x="48" y="66" width="18" height="5" rx="2" fill="#93C5FD" />
+
+        {/* Sparkles */}
+        <path
+          d="M38 115 L42 125 L52 129 L42 133 L38 143 L34 133 L24 129 L34 125 Z"
+          fill="#FBBF24"
+        />
+
+        <circle cx="158" cy="140" r="7" fill="#A78BFA" />
+        <circle cx="175" cy="120" r="5" fill="#4ADE80" />
       </svg>
     ),
   },
