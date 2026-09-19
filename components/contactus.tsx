@@ -22,7 +22,7 @@ const contactMethods: ContactMethod[] = [
   {
     id: 1,
     title: "Phone",
-    value: "+92 302 9561459",
+    value: "+92 3275561880",
     href: "tel:+923029561459",
     type: "phone",
     cta: "Call Me",
@@ -31,8 +31,8 @@ const contactMethods: ContactMethod[] = [
   {
     id: 2,
     title: "Email",
-    value: "javeriaahmed734@gmail.com",
-    href: "mailto:javeriaahmed734@gmail.com",
+    value: "Alishbasiddiq61@gmail.com",
+    href: "mailto:Alishbasiddiq61@gmail.com",
     type: "email",
     cta: "Send Email",
   },
@@ -154,7 +154,7 @@ export default function ContactSection() {
           </p>
 
           <Link
-            href="mailto:javeriaahmed734@gmail.com"
+            href="mailto:Alishbasiddiq61@gmail.com"
             className="inline-flex items-center gap-2 rounded-lg bg-yellow-400 px-6 py-3 text-sm font-semibold text-black transition-all duration-300 hover:bg-yellow-300 hover:shadow-lg hover:shadow-yellow-500/20"
           >
             Start a Conversation
